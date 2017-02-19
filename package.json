@@ -1,0 +1,28 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "记住我的Gulp配置...",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liaochao28/gulp.git"
+  },
+  "author": "lc",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "browserify": "^14.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
+    "uglify": "^0.1.5"
+  },
+  "bugs": {
+    "url": "https://github.com/liaochao28/gulp/issues"
+  },
+  "homepage": "https://github.com/liaochao28/gulp#readme"
+}

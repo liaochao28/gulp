@@ -31,7 +31,7 @@ gulp.task('sassTest', function () {
             remove:true
         }))
         .pipe(gulp.dest('./dist/css'))
-        .pipe(browserSync.reload({stream: true}));
+        //.pipe(browserSync.reload({stream: true}));
  });
 
 gulp.task('default', ['server']);
@@ -45,6 +45,7 @@ gulp.task('server', function(){
     });
 
     gulp.watch('./src/sass/*.scss', ['sassTest']);
+    gulp.watch('./dist/css/*.css').on('change', reload);
     gulp.watch('./**/*.html').on('change', reload);
     gulp.watch('./src/js/*.js', ['js-watch']);
 });
